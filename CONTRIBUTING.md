@@ -1,6 +1,6 @@
-# Contributing to dashcraft
+# Contributing to DashLab
 
-Thank you for helping make dashcraft better. This guide covers everything you need to contribute effectively.
+Thank you for helping make DashLab better. This guide covers everything you need to contribute effectively.
 
 ---
 
@@ -8,20 +8,20 @@ Thank you for helping make dashcraft better. This guide covers everything you ne
 
 ```sh
 # 1. Fork and clone
-git clone https://github.com/<your-username>/dashcraft.git
-cd dashcraft
+git clone https://github.com/<your-username>/dashlab.git
+cd DashLab
 
 # 2. Install dependencies (requires pnpm 9+)
 pnpm install
 
 # 3. Build the core library
-pnpm --filter @dashcraft/core build
+pnpm --filter @dashlab/core build
 
 # 4. Run tests
-pnpm --filter @dashcraft/core test
+pnpm --filter @dashlab/core test
 
 # 5. Start the product site
-pnpm --filter @dashcraft/site dev
+pnpm --filter @dashlab/site dev
 ```
 
 Requires **Node.js 20+** and **pnpm 9+**.
@@ -110,8 +110,8 @@ These apply to all contributions:
 
 Before opening a PR, confirm:
 
-- [ ] `pnpm --filter @dashcraft/core build` passes (0 TypeScript errors)
-- [ ] `pnpm --filter @dashcraft/core test` passes
+- [ ] `pnpm --filter @dashlab/core build` passes (0 TypeScript errors)
+- [ ] `pnpm --filter @dashlab/core test` passes
 - [ ] If new component/hook: docs page updated in `apps/site/`
 - [ ] If new widget type: added to playground palette
 - [ ] No committed `.env` files or API keys
@@ -137,7 +137,7 @@ Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.md). Include:
 - Which component or hook is affected
 - Minimal reproduction (StackBlitz or code snippet)
 - Expected vs actual behaviour
-- Node version, React version, @dashcraft/core version
+- Node version, React version, @dashlab/core version
 
 ---
 
@@ -149,7 +149,7 @@ Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md). D
 
 ## Questions
 
-Open a [GitHub Discussion](https://github.com/Nishant-Chaudhary5338/dashcraft/discussions) for questions that aren't bugs or feature requests.
+Open a [GitHub Discussion](https://github.com/Nishant-Chaudhary5338/dashlab/discussions) for questions that aren't bugs or feature requests.
 
 ---
 

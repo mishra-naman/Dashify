@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "dashcraft — Headless React Dashboard Library",
+  title: "DashLab — Headless React Dashboard Library",
   description:
     "Drag-and-drop grids, resizable widgets, KPI cards, and chart support in one MIT React library. Boolean API. Bring your own styles. AI-native with llms.txt and MCP server.",
   keywords: [
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Nishant Chaudhary" }],
   openGraph: {
-    title: "dashcraft — Build React Dashboards with One Prop",
+    title: "DashLab — Build React Dashboards with One Prop",
     description:
       "The headless React dashboard library with drag-and-drop, resizable widgets, recharts + nivo charts, and persistent layouts. Free and open source.",
-    url: "https://dashcraft.digitribe.world",
-    siteName: "dashcraft",
+    url: "https://dashlab.digitribe.world",
+    siteName: "DashLab",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "dashcraft — Headless React Dashboard Library",
+    title: "DashLab — Headless React Dashboard Library",
     description:
       "Boolean API. Headless. Chart-agnostic. AI-native. Build React dashboards without the plumbing.",
   },
-  metadataBase: new URL("https://dashcraft.digitribe.world"),
+  metadataBase: new URL("https://dashlab.digitribe.world"),
 };
 
 export default function RootLayout({

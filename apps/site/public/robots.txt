@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dashcraft.digitribe.world/sitemap.xml
+Sitemap: https://dashlab.digitribe.world/sitemap.xml

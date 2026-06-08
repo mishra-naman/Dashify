@@ -1,5 +1,5 @@
 /**
- * Showcase preset configurations for the dashcraft demo.
+ * Showcase preset configurations for the DashLab demo.
  *
  * Each preset defines:
  * - `widgets` — array of DashboardCard props + widget data for rendering

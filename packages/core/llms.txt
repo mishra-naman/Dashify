@@ -1,9 +1,9 @@
-# @dashcraft/core
+# @dashlab/core
 
 Headless React dashboard library. Build interactive dashboards with drag-and-drop layout, resizable widgets, KPI cards, and charts.
 
 ## Install
-npm install @dashcraft/core
+npm install @dashlab/core
 
 ## Core API
 
@@ -30,9 +30,9 @@ Direct Zustand store access for custom integrations.
 
 ## Quick start example
 ```tsx
-import { Dashboard, DashboardCard } from '@dashcraft/core'
-import { KPIWidget, RechartsWidget } from '@dashcraft/core'
-import '@dashcraft/core/styles.css'
+import { Dashboard, DashboardCard } from '@dashlab/core'
+import { KPIWidget, RechartsWidget } from '@dashlab/core'
+import '@dashlab/core/styles.css'
 
 function SalesDashboard() {
   return (

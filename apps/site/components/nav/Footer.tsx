@@ -14,7 +14,7 @@ export function Footer() {
                 ))}
               </span>
               <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "1rem", letterSpacing: "-0.02em" }}>
-                dashcraft
+                DashLab
               </span>
             </div>
             <p style={{ fontSize: "0.875rem", color: "var(--text-muted)", lineHeight: 1.65, margin: 0 }}>
@@ -46,10 +46,10 @@ export function Footer() {
               Open Source
             </p>
             {[
-              ["GitHub", "https://github.com/nishant-chaudhary/dashcraft"],
-              ["npm", "https://npmjs.com/package/@dashcraft/core"],
-              ["Report a Bug", "https://github.com/nishant-chaudhary/dashcraft/issues"],
-              ["Contributing", "https://github.com/nishant-chaudhary/dashcraft/blob/main/CONTRIBUTING.md"],
+              ["GitHub", "https://github.com/nishant-chaudhary/dashlab"],
+              ["npm", "https://npmjs.com/package/@dashlab/core"],
+              ["Report a Bug", "https://github.com/nishant-chaudhary/dashlab/issues"],
+              ["Contributing", "https://github.com/nishant-chaudhary/dashlab/blob/main/CONTRIBUTING.md"],
             ].map(([label, href]) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                 style={{ display: "block", fontSize: "0.875rem", color: "var(--text-secondary)", textDecoration: "none", padding: "4px 0", transition: "color 0.15s" }}
@@ -66,9 +66,9 @@ export function Footer() {
               AI Tools
             </p>
             {[
-              ["MCP Codegen Server", "https://npmjs.com/package/@dashcraft/mcp-codegen"],
-              ["llms.txt", "https://dashcraft.digitribe.world/llms.txt"],
-              ["AGENTS.md", "https://github.com/nishant-chaudhary/dashcraft/blob/main/AGENTS.md"],
+              ["MCP Codegen Server", "https://npmjs.com/package/@dashlab/mcp-codegen"],
+              ["llms.txt", "https://dashlab.digitribe.world/llms.txt"],
+              ["AGENTS.md", "https://github.com/nishant-chaudhary/dashlab/blob/main/AGENTS.md"],
             ].map(([label, href]) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                 style={{ display: "block", fontSize: "0.875rem", color: "var(--text-secondary)", textDecoration: "none", padding: "4px 0", transition: "color 0.15s" }}
@@ -90,7 +90,7 @@ export function Footer() {
             </a>
           </p>
           <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", fontFamily: "var(--font-mono)", margin: 0 }}>
-            @dashcraft/core v0.1.0
+            @dashlab/core v0.1.0
           </p>
         </div>
       </div>

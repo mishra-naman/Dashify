@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://dashcraft.digitribe.world";
+  const base = "https://dashlab.digitribe.world";
   const now = new Date();
 
   return [

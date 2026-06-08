@@ -20,7 +20,7 @@ export function Navbar() {
               <span key={i} className="nav-logo-dot" />
             ))}
           </span>
-          dashcraft
+          DashLab
         </Link>
 
         <div className="nav-links">
@@ -28,7 +28,7 @@ export function Navbar() {
           <Link href="/showcase" className="nav-link">Showcase</Link>
           <Link href="/playground" className="nav-link">Playground</Link>
           <a
-            href="https://github.com/nishant-chaudhary/dashcraft"
+            href="https://github.com/nishant-chaudhary/dashlab"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"
@@ -36,7 +36,7 @@ export function Navbar() {
             GitHub
           </a>
           <a
-            href="https://npmjs.com/package/@dashcraft/core"
+            href="https://npmjs.com/package/@dashlab/core"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"

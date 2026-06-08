@@ -90,8 +90,8 @@ export function generateDashboardCode(
     })
     .join("\n\n");
 
-  return `import { ${widgetImports.join(", ")} } from '@dashcraft/core'
-import '@dashcraft/core/styles.css'
+  return `import { ${widgetImports.join(", ")} } from '@dashlab/core'
+import '@dashlab/core/styles.css'
 
 export function ${componentName}() {
   return (
@@ -117,7 +117,7 @@ export function generateProjectFiles(
         private: true,
         scripts: { dev: "vite", build: "tsc && vite build", preview: "vite preview" },
         dependencies: {
-          "@dashcraft/core": "^0.1.0",
+          "@dashlab/core": "^0.1.0",
           react: "^19.0.0",
           "react-dom": "^19.0.0",
           recharts: "^2.15.0",
@@ -193,7 +193,7 @@ body { margin: 0; font-family: system-ui, sans-serif; }
 `,
     "README.md": `# ${projectName}
 
-Generated with [dashcraft playground](https://dashcraft.digitribe.world/playground).
+Generated with [DashLab playground](https://dashlab.digitribe.world/playground).
 
 ## Getting started
 
@@ -211,8 +211,8 @@ Add \`className\` or \`style\` props to style widgets to match your design syste
 
 ## Learn more
 
-- [dashcraft docs](https://dashcraft.digitribe.world/docs)
-- [@dashcraft/core on npm](https://npmjs.com/package/@dashcraft/core)
+- [DashLab docs](https://dashlab.digitribe.world/docs)
+- [@dashlab/core on npm](https://npmjs.com/package/@dashlab/core)
 `,
   };
 }

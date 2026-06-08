@@ -1,15 +1,15 @@
-# dashcraft
+# DashLab
 
 > Headless React dashboard library with boolean API, drag-and-drop, resizable widgets, and AI-native tooling.
 
 ## Overview
 
-dashcraft (`@dashcraft/core`) is an MIT-licensed React library for building admin panels, analytics dashboards, and internal tools. It handles layout, drag-and-drop, resizing, persistence, and widget state — you bring your own styles.
+DashLab (`@dashlab/core`) is an MIT-licensed React library for building admin panels, analytics dashboards, and internal tools. It handles layout, drag-and-drop, resizing, persistence, and widget state — you bring your own styles.
 
 ## Quick Install
 
 ```bash
-npm install @dashcraft/core
+npm install @dashlab/core
 # Optional chart peer deps
 npm install recharts
 npm install @nivo/core @nivo/bar @nivo/line @nivo/pie
@@ -20,8 +20,8 @@ npm install @nivo/core @nivo/bar @nivo/line @nivo/pie
 The API is intentionally minimal. Every interactive behaviour is a boolean prop on `DashboardCard`:
 
 ```tsx
-import { Dashboard, DashboardCard, KPIWidget, RechartsWidget } from '@dashcraft/core'
-import '@dashcraft/core/styles.css'
+import { Dashboard, DashboardCard, KPIWidget, RechartsWidget } from '@dashlab/core'
+import '@dashlab/core/styles.css'
 
 export function MyDashboard() {
   return (
@@ -113,21 +113,21 @@ Chart widget backed by @nivo.
 
 ## MCP Server
 
-For AI-assisted dashboard generation, use `@dashcraft/mcp-codegen`:
+For AI-assisted dashboard generation, use `@dashlab/mcp-codegen`:
 
 ```bash
-npm install -g @dashcraft/mcp-codegen
+npm install -g @dashlab/mcp-codegen
 ```
 
 Tools available:
-- `analyze_dashboard` — Analyze a screenshot and map widgets to @dashcraft/core components
+- `analyze_dashboard` — Analyze a screenshot and map widgets to @dashlab/core components
 - `generate_code` — Generate TSX code from widget configuration
 - `generate_project` — Generate a complete Vite project as a base64 zip
 
 ## Links
 
-- Docs: https://dashcraft.digitribe.world/docs
-- Playground: https://dashcraft.digitribe.world/playground
-- GitHub: https://github.com/nishant-chaudhary/dashcraft
-- npm: https://npmjs.com/package/@dashcraft/core
-- AGENTS.md: https://dashcraft.digitribe.world/AGENTS.md
+- Docs: https://dashlab.digitribe.world/docs
+- Playground: https://dashlab.digitribe.world/playground
+- GitHub: https://github.com/nishant-chaudhary/dashlab
+- npm: https://npmjs.com/package/@dashlab/core
+- AGENTS.md: https://dashlab.digitribe.world/AGENTS.md

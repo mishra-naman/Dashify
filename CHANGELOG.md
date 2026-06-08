@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `@dashcraft/core` are documented here.
+All notable changes to `@dashlab/core` are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -14,7 +14,7 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - AI-native files: `llms.txt`, `AGENTS.md` for LLM and agent discoverability
 - Full docs site: installation, API reference, components, hooks, 3 guides
 - `/playground` drag-and-drop builder with AI import and project zip export
-- MCP server `@dashcraft/mcp-codegen`: `analyze_dashboard`, `generate_code`, `generate_project`
+- MCP server `@dashlab/mcp-codegen`: `analyze_dashboard`, `generate_code`, `generate_project`
 
 ---
 
@@ -37,5 +37,5 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - TypeScript strict mode throughout, declaration files included
 - ESM + CJS dual build via tsup
 
-[Unreleased]: https://github.com/Nishant-Chaudhary5338/dashcraft/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/Nishant-Chaudhary5338/dashcraft/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Nishant-Chaudhary5338/dashlab/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Nishant-Chaudhary5338/dashlab/releases/tag/v0.1.0

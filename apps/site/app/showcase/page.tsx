@@ -4,9 +4,9 @@ import { Footer } from "@/components/nav/Footer";
 import { ShowcaseLazy } from "@/components/showcase/ShowcaseLazy";
 
 export const metadata: Metadata = {
-  title: "Showcase — dashcraft",
+  title: "Showcase — DashLab",
   description:
-    "Three production-ready dashboard layouts built entirely with @dashcraft/core. Drag, resize, delete, and download the code.",
+    "Three production-ready dashboard layouts built entirely with @dashlab/core. Drag, resize, delete, and download the code.",
 };
 
 export default function ShowcasePage() {
@@ -37,7 +37,7 @@ export default function ShowcasePage() {
               marginBottom: 20,
             }}
           >
-            Live Demo · Powered by @dashcraft/core
+            Live Demo · Powered by @dashlab/core
           </div>
           <h1
             style={{
@@ -70,7 +70,7 @@ export default function ShowcasePage() {
                 borderRadius: 4,
               }}
             >
-              @dashcraft/core
+              @dashlab/core
             </code>
             . Drag widgets, resize them, delete and restore. Hit Download to get a
             full working Vite project.

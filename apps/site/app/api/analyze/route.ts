@@ -2,7 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { NextRequest, NextResponse } from "next/server";
 
 const SYSTEM_PROMPT = `You are a UI analysis expert specializing in dashboard components.
-Analyze dashboard images and map widgets to @dashcraft/core React components.`;
+Analyze dashboard images and map widgets to @dashlab/core React components.`;
 
 const USER_PROMPT = `Analyze this dashboard image. Identify every distinct widget or panel.
 
@@ -19,7 +19,7 @@ Return ONLY valid JSON with no markdown fences:
     {
       "id": "widget-1",
       "type": "kpi",
-      "dashcraftComponent": "KPIWidget",
+      "dashlabComponent": "KPIWidget",
       "title": "Revenue",
       "colStart": 1,
       "colSpan": 3,

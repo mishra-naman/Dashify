@@ -1,21 +1,21 @@
-# dashcraft
+# DashLab
 
-[![CI](https://github.com/Nishant-Chaudhary5338/dashcraft/actions/workflows/ci.yml/badge.svg)](https://github.com/Nishant-Chaudhary5338/dashcraft/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@dashcraft/core)](https://www.npmjs.com/package/@dashcraft/core)
+[![CI](https://github.com/Nishant-Chaudhary5338/dashlab/actions/workflows/ci.yml/badge.svg)](https://github.com/Nishant-Chaudhary5338/dashlab/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@dashlab/core)](https://www.npmjs.com/package/@dashlab/core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6366f1.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **Headless React dashboard library. Five boolean props. Your styles.**
 
-dashcraft gives you drag-and-drop grids, resizable widgets, KPI cards, recharts + nivo charts, persistent layouts, and an MCP codegen server — without touching your design system.
+DashLab gives you drag-and-drop grids, resizable widgets, KPI cards, recharts + nivo charts, persistent layouts, and an MCP codegen server — without touching your design system.
 
-→ **[Live site & playground](https://dashcraft.digitribe.world)** · [Docs](https://dashcraft.digitribe.world/docs) · [npm](https://www.npmjs.com/package/@dashcraft/core)
+→ **[Live site & playground](https://dashlab.digitribe.world)** · [Docs](https://dashlab.digitribe.world/docs) · [npm](https://www.npmjs.com/package/@dashlab/core)
 
 ---
 
-## Why dashcraft?
+## Why DashLab?
 
-| Pain | dashcraft |
+| Pain | DashLab |
 |---|---|
 | Every dashboard library forces its design system | Fully headless — bring Tailwind, CSS Modules, or nothing |
 | Wiring recharts to drag-drop takes days | `drag resize settings delete` — four props, done |
@@ -27,7 +27,7 @@ dashcraft gives you drag-and-drop grids, resizable widgets, KPI cards, recharts 
 ## Install
 
 ```sh
-npm install @dashcraft/core
+npm install @dashlab/core
 
 # Optional chart peer deps
 npm install recharts
@@ -39,8 +39,8 @@ npm install @nivo/core @nivo/heatmap @nivo/treemap @nivo/sunburst
 ## Quick start
 
 ```tsx
-import { Dashboard, DashboardCard, KPIWidget, RechartsWidget } from '@dashcraft/core'
-import '@dashcraft/core/styles.css'
+import { Dashboard, DashboardCard, KPIWidget, RechartsWidget } from '@dashlab/core'
+import '@dashlab/core/styles.css'
 
 const data = [
   { month: 'Jan', revenue: 12400 },
@@ -122,24 +122,24 @@ No config objects. No verbose prop names. Just booleans.
 
 ## AI-native
 
-dashcraft is built to work with AI tools out of the box:
+DashLab is built to work with AI tools out of the box:
 
-- **`llms.txt`** at [`/llms.txt`](https://dashcraft.digitribe.world/llms.txt) — machine-readable API reference any LLM can fetch
-- **`AGENTS.md`** at [`/AGENTS.md`](https://dashcraft.digitribe.world/AGENTS.md) — full agent guide for code generation
-- **MCP server** — `@dashcraft/mcp-codegen` for Claude Desktop, Cursor, and any MCP client
+- **`llms.txt`** at [`/llms.txt`](https://dashlab.digitribe.world/llms.txt) — machine-readable API reference any LLM can fetch
+- **`AGENTS.md`** at [`/AGENTS.md`](https://dashlab.digitribe.world/AGENTS.md) — full agent guide for code generation
+- **MCP server** — `@dashlab/mcp-codegen` for Claude Desktop, Cursor, and any MCP client
 
 ### MCP setup
 
 ```sh
-npm install -g @dashcraft/mcp-codegen
+npm install -g @dashlab/mcp-codegen
 ```
 
 Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "dashcraft": {
-      "command": "dashcraft-mcp"
+    "DashLab": {
+      "command": "dashlab-mcp"
     }
   }
 }
@@ -153,11 +153,11 @@ Tools: `analyze_dashboard` · `generate_code` · `generate_project`
 
 ```
 packages/
-  core/           @dashcraft/core — the React library
+  core/           @dashlab/core — the React library
 apps/
   site/           Product site (Next.js 15)
 tools/
-  codegen/        @dashcraft/mcp-codegen — MCP server
+  codegen/        @dashlab/mcp-codegen — MCP server
 ```
 
 ---
@@ -172,13 +172,13 @@ pnpm install
 pnpm dev
 
 # Start just the site
-pnpm --filter @dashcraft/site dev
+pnpm --filter @dashlab/site dev
 
 # Build the library
-pnpm --filter @dashcraft/core build
+pnpm --filter @dashlab/core build
 
 # Run library tests
-pnpm --filter @dashcraft/core test
+pnpm --filter @dashlab/core test
 ```
 
 Requires Node.js 20+, pnpm 9+.
@@ -191,8 +191,8 @@ Contributions are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the f
 
 Short version:
 1. Fork → branch → code
-2. `pnpm --filter @dashcraft/core build` must pass
-3. `pnpm --filter @dashcraft/core test` must pass
+2. `pnpm --filter @dashlab/core build` must pass
+3. `pnpm --filter @dashlab/core test` must pass
 4. Open a PR with the checklist filled out
 
 ---

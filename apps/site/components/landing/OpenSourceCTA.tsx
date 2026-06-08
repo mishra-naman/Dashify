@@ -14,14 +14,14 @@ export function OpenSourceCTA() {
         </h2>
 
         <p style={{ fontSize: "1.1rem", color: "var(--text-secondary)", lineHeight: 1.7, marginBottom: 40 }}>
-          dashcraft is free, open source, and MIT licensed. No per-seat fees.
+          DashLab is free, open source, and MIT licensed. No per-seat fees.
           No vendor lock-in. No design opinions. Just a clean boolean API,
           accessible drag-and-drop, and the chart library you already use.
         </p>
 
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <a
-            href="https://github.com/nishant-chaudhary/dashcraft"
+            href="https://github.com/nishant-chaudhary/dashlab"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-lg"
@@ -32,7 +32,7 @@ export function OpenSourceCTA() {
             View on GitHub
           </a>
           <a
-            href="https://github.com/nishant-chaudhary/dashcraft/discussions"
+            href="https://github.com/nishant-chaudhary/dashlab/discussions"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-ghost btn-lg"

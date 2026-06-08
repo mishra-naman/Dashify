@@ -1,12 +1,12 @@
-# AGENTS.md — @dashcraft/core
+# AGENTS.md — @dashlab/core
 
-Instructions for AI agents building dashboards with `@dashcraft/core`.
+Instructions for AI agents building dashboards with `@dashlab/core`.
 
 ---
 
 ## Package Overview
 
-`@dashcraft/core` is a **headless React dashboard library** that provides:
+`@dashlab/core` is a **headless React dashboard library** that provides:
 - Drag-and-drop layout with `@dnd-kit`
 - Resizable widgets
 - KPI cards with trend indicators
@@ -21,7 +21,7 @@ Instructions for AI agents building dashboards with `@dashcraft/core`.
 ## Installation
 
 ```bash
-npm install @dashcraft/core
+npm install @dashlab/core
 # Peer deps for charts (optional):
 npm install recharts
 npm install @nivo/core @nivo/heatmap @nivo/treemap @nivo/sunburst
@@ -33,24 +33,24 @@ npm install @nivo/core @nivo/heatmap @nivo/treemap @nivo/sunburst
 
 ```ts
 // Core components and hooks
-import { Dashboard, DashboardCard, useDashboard, useDashboardStore } from '@dashcraft/core'
+import { Dashboard, DashboardCard, useDashboard, useDashboardStore } from '@dashlab/core'
 
 // Chart widgets (peer deps required)
-import { RechartsWidget } from '@dashcraft/core/widgets/recharts'
-import { NivoWidget } from '@dashcraft/core/widgets/nivo'
-import { KPIWidget } from '@dashcraft/core/widgets/kpi'
+import { RechartsWidget } from '@dashlab/core/widgets/recharts'
+import { NivoWidget } from '@dashlab/core/widgets/nivo'
+import { KPIWidget } from '@dashlab/core/widgets/kpi'
 
 // All widgets from one path
-import { RechartsWidget, NivoWidget, KPIWidget } from '@dashcraft/core/widgets'
+import { RechartsWidget, NivoWidget, KPIWidget } from '@dashlab/core/widgets'
 
 // Hooks only (tree-shakeable)
-import { useDashboard, useStateWithHistory, useDebounce } from '@dashcraft/core/hooks'
+import { useDashboard, useStateWithHistory, useDebounce } from '@dashlab/core/hooks'
 
 // Store only
-import { useDashboardStore } from '@dashcraft/core/store'
+import { useDashboardStore } from '@dashlab/core/store'
 
 // CSS (required for edit-mode UI)
-import '@dashcraft/core/styles.css'
+import '@dashlab/core/styles.css'
 ```
 
 ---
@@ -327,8 +327,8 @@ function ChartWidget({ id }: { id: string }) {
 ### Minimal dashboard
 
 ```tsx
-import { Dashboard, DashboardCard } from '@dashcraft/core'
-import '@dashcraft/core/styles.css'
+import { Dashboard, DashboardCard } from '@dashlab/core'
+import '@dashlab/core/styles.css'
 
 export function MyDashboard() {
   return (
@@ -344,10 +344,10 @@ export function MyDashboard() {
 ### Full analytics dashboard
 
 ```tsx
-import { Dashboard, DashboardCard, useDashboard } from '@dashcraft/core'
-import { KPIWidget } from '@dashcraft/core/widgets/kpi'
-import { RechartsWidget } from '@dashcraft/core/widgets/recharts'
-import '@dashcraft/core/styles.css'
+import { Dashboard, DashboardCard, useDashboard } from '@dashlab/core'
+import { KPIWidget } from '@dashlab/core/widgets/kpi'
+import { RechartsWidget } from '@dashlab/core/widgets/recharts'
+import '@dashlab/core/styles.css'
 
 function EditControls() {
   const { isEditMode, toggleEditMode, saveLayout } = useDashboard()
@@ -411,7 +411,7 @@ import type {
   KPITrend,
   ChartType,
   NivoChartType,
-} from '@dashcraft/core'
+} from '@dashlab/core'
 ```
 
 ---

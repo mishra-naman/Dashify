@@ -20,7 +20,7 @@ You should receive a response within **48 hours**. If you don't hear back, pleas
 
 ## Scope
 
-dashcraft is a client-side React library. The main security considerations are:
+DashLab is a client-side React library. The main security considerations are:
 - XSS via unsanitized widget titles or data passed as props
 - Prototype pollution via untrusted JSON in the HTTP client
 - localStorage data integrity for persisted layouts

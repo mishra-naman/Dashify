@@ -2,9 +2,9 @@ import { Navbar } from "@/components/nav/Navbar";
 import { PlaygroundLazy } from "@/components/playground/PlaygroundLazy";
 
 export const metadata = {
-  title: "Playground — dashcraft",
+  title: "Playground — DashLab",
   description:
-    "Build React dashboards visually. Drag widgets, configure behaviour, and download production-ready @dashcraft/core code.",
+    "Build React dashboards visually. Drag widgets, configure behaviour, and download production-ready @dashlab/core code.",
 };
 
 export default function PlaygroundPage() {

@@ -6,7 +6,7 @@ export function PainPoints() {
           <div className="pain-cell">
             <p className="pain-problem">"Every dashboard library chooses your design system for you."</p>
             <p className="pain-solution">
-              dashcraft is <strong>completely headless</strong>. Your Tailwind, your tokens, your design.
+              DashLab is <strong>completely headless</strong>. Your Tailwind, your tokens, your design.
               We ship behaviour — you ship pixels.
             </p>
           </div>
@@ -19,7 +19,7 @@ export function PainPoints() {
           <div className="pain-cell">
             <p className="pain-problem">"AI tools don't know my component API — every suggestion is wrong."</p>
             <p className="pain-solution">
-              <strong>llms.txt, MCP codegen server, and AGENTS.md</strong> included. Cursor and Claude understand dashcraft from the first keystroke.
+              <strong>llms.txt, MCP codegen server, and AGENTS.md</strong> included. Cursor and Claude understand DashLab from the first keystroke.
             </p>
           </div>
         </div>

@@ -8,7 +8,7 @@ on:
 
 jobs:
   core:
-    name: "@dashcraft/core — Build & Test (Node ${{ matrix.node }})"
+    name: "@dashlab/core — Build & Test (Node ${{ matrix.node }})"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -30,17 +30,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build @dashcraft/core
-        run: pnpm --filter @dashcraft/core build
+      - name: Build @dashlab/core
+        run: pnpm --filter @dashlab/core build
 
-      - name: Type check @dashcraft/core
-        run: pnpm --filter @dashcraft/core typecheck
+      - name: Type check @dashlab/core
+        run: pnpm --filter @dashlab/core typecheck
 
-      - name: Test @dashcraft/core
-        run: pnpm --filter @dashcraft/core test
+      - name: Test @dashlab/core
+        run: pnpm --filter @dashlab/core test
 
   mcp:
-    name: "@dashcraft/mcp-codegen — Build"
+    name: "@dashlab/mcp-codegen — Build"
     runs-on: ubuntu-latest
 
     steps:
@@ -59,7 +59,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build MCP server
-        run: pnpm --filter @dashcraft/mcp-codegen build
+        run: pnpm --filter @dashlab/mcp-codegen build
 
   site:
     name: "Site — Build"
@@ -78,7 +78,7 @@ jobs:
         working-directory: apps/site
         run: npm ci
 
-      - name: Build @dashcraft/core (required by site)
+      - name: Build @dashlab/core (required by site)
         working-directory: packages/core
         run: npm install && npm run build
 

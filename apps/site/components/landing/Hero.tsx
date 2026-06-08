@@ -98,7 +98,7 @@ export function Hero() {
           </h1>
 
           <p className="fade-up fade-up-3" style={{ fontSize: "1.1rem", color: "var(--text-secondary)", lineHeight: 1.7, marginBottom: 36, maxWidth: 460 }}>
-            Stop wiring react-grid-layout from scratch. dashcraft gives you draggable, resizable, chart-ready dashboard widgets with a boolean API that reads like plain English — and zero opinions about your styles.
+            Stop wiring react-grid-layout from scratch. DashLab gives you draggable, resizable, chart-ready dashboard widgets with a boolean API that reads like plain English — and zero opinions about your styles.
           </p>
 
           <div className="fade-up fade-up-4" style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 28 }}>
@@ -113,8 +113,8 @@ export function Hero() {
           <div className="fade-up fade-up-5">
             <div className="install-snippet">
               <span className="prompt">$</span>
-              <span className="pkg">npm install @dashcraft/core</span>
-              <CopyButton text="npm install @dashcraft/core" />
+              <span className="pkg">npm install @dashlab/core</span>
+              <CopyButton text="npm install @dashlab/core" />
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export function Hero() {
                 {" } "}
                 <span className="tok-keyword">from</span>
                 {" '"}
-                <span className="tok-string">@dashcraft/core</span>
+                <span className="tok-string">@dashlab/core</span>
                 {"'\n"}
                 <span className="tok-keyword">import</span>
                 {" { "}
@@ -159,7 +159,7 @@ export function Hero() {
                 {" } "}
                 <span className="tok-keyword">from</span>
                 {" '"}
-                <span className="tok-string">@dashcraft/core</span>
+                <span className="tok-string">@dashlab/core</span>
                 {"'\n\n"}
                 <span className="tok-keyword">export function</span>
                 {" "}

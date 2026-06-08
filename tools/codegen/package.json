@@ -1,10 +1,10 @@
 {
-  "name": "@dashcraft/mcp-codegen",
+  "name": "@dashlab/mcp-codegen",
   "version": "0.1.0",
-  "description": "MCP server — convert dashboard images to @dashcraft/core React code",
+  "description": "MCP server — convert dashboard images to @dashlab/core React code",
   "type": "module",
   "license": "MIT",
-  "bin": { "dashcraft-codegen": "./build/index.js" },
+  "bin": { "dashlab-codegen": "./build/index.js" },
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/index.ts",

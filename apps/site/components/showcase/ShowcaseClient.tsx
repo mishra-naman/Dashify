@@ -3,10 +3,10 @@
  * ShowcaseClient — interactive dashboard showcase with preset switcher.
  *
  * Features:
- * - 3 real-world preset dashboards using actual @dashcraft/core components
+ * - 3 real-world preset dashboards using actual @dashlab/core components
  * - Edit Mode toggle: enables drag, resize, delete on all cards
  * - Reset Layout: restores default widget positions via store resetLayout()
- * - Download Code: generates @dashcraft/core TSX via lib/codegen.ts
+ * - Download Code: generates @dashlab/core TSX via lib/codegen.ts
  * - Deleted widgets tracked in local state; restore-all on preset switch
  *
  * @example
@@ -56,9 +56,9 @@ export function ShowcaseClient() {
   // Reset deleted widgets when switching presets
   const handlePresetSwitch = useCallback((key: PresetKey) => {
     startTransition(() => {
-      // Reset the global dashcraft store before switching so old widget
+      // Reset the global DashLab store before switching so old widget
       // positions don't bleed into the new preset's layout
-      import("@dashcraft/core/store").then(({ useDashboardStore }) => {
+      import("@dashlab/core/store").then(({ useDashboardStore }) => {
         useDashboardStore.getState().resetLayout();
         setPreset(key);
         setDeletedIds(new Set());
@@ -73,7 +73,7 @@ export function ShowcaseClient() {
   }, []);
 
   const handleReset = useCallback(() => {
-    import("@dashcraft/core/store").then(({ useDashboardStore }) => {
+    import("@dashlab/core/store").then(({ useDashboardStore }) => {
       useDashboardStore.getState().resetLayout();
       setDeletedIds(new Set());
     });
@@ -81,7 +81,7 @@ export function ShowcaseClient() {
 
   const handleDownload = useCallback(async () => {
     const widgets = presetToCodegen(preset, deletedIds);
-    await downloadProjectZip(widgets, `dashcraft-${preset}-dashboard`);
+    await downloadProjectZip(widgets, `dashlab-${preset}-dashboard`);
   }, [preset, deletedIds]);
 
   const currentPreset = PRESETS[preset];

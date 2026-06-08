@@ -27,7 +27,7 @@ const FEATURES = [
   {
     symbol: "◌",
     title: "Persistent Layouts",
-    desc: "Pass persist=\"key\" and dashcraft automatically saves and restores every widget position across sessions. One prop — no backend required.",
+    desc: "Pass persist=\"key\" and DashLab automatically saves and restores every widget position across sessions. One prop — no backend required.",
   },
 ];
 

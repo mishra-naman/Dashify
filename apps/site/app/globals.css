@@ -608,8 +608,8 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0 0 0 1px var(--border-subtle), 0 24px 48px rgba(0,0,0,0.4);
 }
 
-/* Override @dashcraft/core styles to match site theme */
-.showcase-canvas-scroll .dashcraft-card,
+/* Override @dashlab/core styles to match site theme */
+.showcase-canvas-scroll .dashlab-card,
 .showcase-canvas-scroll [class*="DashboardCard"],
 .showcase-canvas-scroll [class*="dashcard"] {
   background: var(--bg-elevated) !important;

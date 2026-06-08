@@ -1,14 +1,14 @@
 {
-  "name": "@dashcraft/core",
+  "name": "@dashlab/core",
   "version": "0.1.0",
   "description": "Headless React dashboard library — drag-and-drop, resizable widgets, KPI cards, chart-agnostic",
   "type": "module",
   "license": "MIT",
   "author": "Nishant Chaudhary",
-  "homepage": "https://dashcraft.digitribe.world",
+  "homepage": "https://dashlab.digitribe.world",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nishant-chaudhary/dashcraft"
+    "url": "https://github.com/nishant-chaudhary/dashlab"
   },
   "keywords": [
     "react",
